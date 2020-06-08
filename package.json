@@ -1,0 +1,27 @@
+{
+  "name": "sateraito_nagoya_2",
+  "version": "1.0.0",
+  "description": "sateraito nagoya",
+  "author": "Asahi Himura",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "NODE_ENV=production nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/google-gtag": "^1.0.4",
+    "@nuxtjs/sentry": "^4.1.2",
+    "@nuxtjs/toast": "^3.3.0",
+    "bulma": "^0.9.0",
+    "nuxt": "^2.0.0",
+    "vue-spinner": "^1.0.3"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  }
+}
