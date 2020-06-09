@@ -54,6 +54,7 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/toast',
+    '@nuxtjs/sentry',
     [
       '@nuxtjs/google-gtag',
       {
@@ -64,7 +65,7 @@ export default {
   ],
 
   toast: {
-      position: 'bottom-left',
+      position: 'center-left',
       duration: 5000,
   },
   /*
@@ -84,8 +85,12 @@ export default {
   },
 
   sentry: {
-    dsn: process.env.SENTRY_DSN,
     config: {
     },
+  },
+
+  env: {
+    RECAPTCHA_KEY: process.env.RECAPTCHA_KEY,
+    SENTRY_DSN: process.env.SENTRY_DSN,
   }
 }
