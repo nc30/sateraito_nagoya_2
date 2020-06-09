@@ -4,17 +4,17 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'サテライトナゴヤ',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'description', name: 'description', content: '同人サークルサテライトナゴヤ' },
       { hid: 'author', property: 'author', content: 'Haigo' },
       { hid: 'keyword', property: 'keyword', content: 'サテライトナゴヤ' },
       { hid: 'twitter:creator', name: "twitter:creator", content: "@satellitenagoya" },
       { hid: 'twitter:card', name: "twitter:card", content: "summary" },
-      { hid: 'og:title', property: "og:title", content: "にとらぼ" },
-      { hid: 'og:description', property: "og:description", content: "にとらぼ" },
+      { hid: 'og:title', property: "og:title", content: "サテライトナゴヤ" },
+      { hid: 'og:description', property: "og:description", content: "世界の中心は常に東海地方にある" },
       { hid: 'og:image', property: "og:image", content: "https://sateraito.nagoya/img/eight-compressor.jpg" }
     ],
     link: [
