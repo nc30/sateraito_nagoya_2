@@ -3,6 +3,7 @@
     <div id="nav">
       <Nav/>
     </div>
+    <Footer class="bottomFix" />
   </div>
 </template>
 
@@ -11,11 +12,13 @@
 import Vue from 'vue'
 import Nav from '~/components/Nav'
 import Form from '~/components/Form.vue'
+import Footer from '~/components/Footer'
 
 export default Vue.extend({
   components: {
     Nav,
-    Form
+    Form,
+    Footer
   }
 })
 </script>

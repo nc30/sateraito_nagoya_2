@@ -1,0 +1,7 @@
+User-agent:Pinterest
+Disallow:/
+
+User-agent:*
+Allow:/
+Allow:/contact
+

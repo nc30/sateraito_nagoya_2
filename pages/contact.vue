@@ -4,11 +4,11 @@
       <Nav/>
     </div>
 
-    <div id="content" class="columns">
-      <div class="column is-5 is-offset-1">
-        <Form />
-      </div>
+    <div id="content">
+      <Form />
     </div>
+
+    <Footer id="footer" />
   </div>
 </template>
 
@@ -17,11 +17,21 @@
 import Vue from 'vue'
 import Nav from '~/components/Nav'
 import Form from '~/components/Form.vue'
+import Footer from '~/components/Footer'
 
 export default Vue.extend({
   components: {
     Nav,
+    Footer,
     Form
+  },
+  head () {
+    return {
+      title: 'contact|サテライトナゴヤ',
+      meta: [
+        { hid: 'og:title', property: "og:title", content: "contact|サテライトナゴヤ" },
+      ]
+    }
   }
 })
 </script>

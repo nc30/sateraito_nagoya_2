@@ -4,7 +4,7 @@
     <menu>
       < <ul>
         <li><router-link to="/">index</router-link> /</li>
-        <li><router-link to="contact">contact</router-link></li>
+        <li><router-link to="/contact">contact</router-link></li>
       </ul> >
     </menu>
   </div>

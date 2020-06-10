@@ -5,7 +5,7 @@
         Send Message
       </div>
       <div class="_wr pad">
-        <label for="name_input" class="lbl">Name</label>
+        <label for="name_input" class="lbl">*Name</label>
         <input type="text" class="ipt" id="name_input" required v-model="name">
       </div>
       <div class="_wr pad">
@@ -13,11 +13,11 @@
         <input type="email" class="ipt" id="email_input" v-model="email" >
       </div>
       <div class="_wr pad">
-        <label for="body_input" class="lbl">Message</label>
+        <label for="body_input" class="lbl">*Message</label>
         <textarea v-model="body" class="ipt" id="body_input" rows="5" required />
       </div>
       <div class="_wr _radio pad">
-        <span class="lbl">Is Cute Naganami Sama?</span>
+        <span class="lbl">*Is Cute Naganami Sama?</span>
         <label>
           <Selector :value="cute" />
           <input type="radio" name="naganamisama_kawaii" v-model="is_cute" value="yes" />

@@ -13,6 +13,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background-color: #00053d;
 }
 
 *,
@@ -22,24 +23,53 @@ html {
   margin: 0;
 }
 body {
-  background-color: #333;
+  position: relative;
   background-image:url('~static/img/hr.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  position: relative;
 }
 #nav {
   max-width: 500px;
   min-width: 400px;
-  min-height: 100%;
-  margin-right: 1em;
-  position: fixed;
-  right: 0px;
+  margin-right: 20px;
 }
 #content {
+  width: 90%;
+  margin: 3em auto;
+}
+#footer {
+  width: 100%;
+}
+#footer.bottomFix {
   position: absolute;
-  width: 70%;
+  bottom: 0;
+}
+
+@media screen and (min-width: 820px) {
+  #wrp {
+  }
+  #nav {
+    margin-right: 1em;
+    position: fixed;
+    right: 0px;
+  }
+  #content {
+    position: absolute;
+    max-width: 400px;
+    left: 30px;
+  }
+  #footer {
+    width: 400px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #content {
+    left: 15em;
+  }
 }
 </style>
 

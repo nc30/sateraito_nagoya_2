@@ -1,7 +1,7 @@
 <template>
   <div id="banners">
-    <a href="https://twitter.com/satellitenagoya/status/1026076947745394691" ><img src="~static/img/sat_03.jpg" /></a>
-    <a href="https://twitter.com/satellitenagoya/status/897491644705931264" ><img src="~static/img/sat_04.jpg" /></a>
+    <a href="https://ec.toranoana.jp/tora_r/ec/item/040030671999/" ><img src="~static/img/sat_03.jpg" /></a>
+    <a href="https://ec.toranoana.jp/tora_r/ec/item/040030566402/" ><img src="~static/img/sat_04.jpg" /></a>
   </div>
 </template>
 

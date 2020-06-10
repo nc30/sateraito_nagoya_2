@@ -2,7 +2,6 @@
   <div class="container">
     <Title />
     <Banners />
-    <Footer />
   </div>
 </template>
 
