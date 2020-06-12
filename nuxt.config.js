@@ -19,7 +19,6 @@ export default {
     ],
     link: [
       // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { href: "https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css", rel:"stylesheet"},
     ],
     script: [
     ]
@@ -61,7 +60,8 @@ export default {
         id: process.env.GA_ID,
         debug: false
       }
-    ]
+    ],
+    'nuxt-svg-loader',
   ],
 
   toast: {
@@ -81,6 +81,9 @@ export default {
   */
   build: {
     extend (config, ctx) {
+      let path = require('path');
+      config.resolve.extensions.push('.svg')
+      config.resolve.alias['@font-mfizz'] = path.join(__dirname, 'node_modules/font-mfizz/src/svg')
     }
   },
 

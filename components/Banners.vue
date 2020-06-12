@@ -1,7 +1,7 @@
 <template>
   <div id="banners">
-    <a href="https://ec.toranoana.jp/tora_r/ec/item/040030671999/" ><img src="~static/img/sat_03.jpg" /></a>
-    <a href="https://ec.toranoana.jp/tora_r/ec/item/040030566402/" ><img src="~static/img/sat_04.jpg" /></a>
+    <a href="https://ec.toranoana.jp/tora_r/ec/item/040030671999/"><img src="/img/sat_03.jpg" alt="熱望" /></a>
+    <a href="https://ec.toranoana.jp/tora_r/ec/item/040030566402/"><img src="/img/sat_04.jpg" alt="マスタープラン" /></a>
   </div>
 </template>
 

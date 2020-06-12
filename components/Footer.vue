@@ -4,11 +4,11 @@
     <div class="listInline respects">
       <ul>
         <li><a href="https://github.com/nc30/sateraito_nagoya_2"><github /></a></li>
-        <li><a href="https://www.archlinux.jp/"><i class="icon-archlinux"></i></a></li>
-        <li><a href="https://www.debian.or.jp/"><i class="icon-debian"></i></a></li>
-        <li><a href="https://www.python.org/"><i class="icon-python"></i></a></li>
-        <li><a href="https://nginx.org/"><i class="icon-nginx"></i></a></li>
-        <li><a href="http://zsh.sourceforge.net/"><i class="icon-shell"></i></a></li>
+        <li><a href="https://www.archlinux.jp/"><ArchLinux/></a></li>
+        <li><a href="https://www.debian.or.jp/"><Debian/></a></li>
+        <li><a href="https://www.python.org/"><Python/></a></li>
+        <li><a href="https://nginx.org/"><Nginx/></a></li>
+        <li><a href="http://zsh.sourceforge.net/"><Shell/></a></li>
       </ul>
     </div>
     <span>(c) 2020 SateraitoNagoya</span>
@@ -17,10 +17,20 @@
 
 <script>
 import github from '~/components/icon/github'
+import ArchLinux from '@font-mfizz/archlinux.svg'
+import Nginx from '@font-mfizz/nginx.svg'
+import Shell from '@font-mfizz/shell.svg'
+import Debian from '@font-mfizz/debian.svg'
+import Python from '@font-mfizz/python.svg'
 
 export default{
   components: {
-    github
+    github,
+    ArchLinux,
+    Nginx,
+    Shell,
+    Debian,
+    Python
   },
   data() {
     return {
@@ -60,16 +70,26 @@ export default{
   &>span {
     display: block;
   }
+
   .respects {
     margin: .2em auto;
     padding-top: .5em;
+    ul {
+      padding: 0;
+    }
     li {
       display: inline;
       padding-left: 0.8em;
+      svg {
+        width: 1em;
+        height: 1em;
+      }
+      path {
+        fill: #eee;
+      }
       a {
         font-size: 1.9em;
         color: #eee;
-        // color: #171a2b;
       }
     }
   }
